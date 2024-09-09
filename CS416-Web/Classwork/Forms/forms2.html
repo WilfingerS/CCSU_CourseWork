@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Test</title>
+    <!-- Inline Java Script <script> 
+        function submitForm(event){
+            event.preventDefault();//prevent from submitting usual way
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const car = document.getElementById("cars").value
+            const dob = document.getElementById("DOB").value
+            //alert('Name:' + name + '\nEmail:' + email); // String concatenation
+            alert(`Name: ${name}\nEmail: ${email}\nSelectedCar: ${car}\nD.O.B: ${dob}`); //String Interpolation
+        }
+    </script>  -->
+    <script src="./onSubmitForm.js"></script> <!-- External JavaScript-->
+</head>
+
+<body>
+    <h1>Submit your information</h1>
+    <form onsubmit="submitForm(event)">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <br/>
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" required>
+        <br/>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" disabled>
+        <br/>
+
+        <label for="DOB">Date of Birth:</label>
+        <input type="date" name = "DOB" id="DOB">
+        <br/>
+
+        <label for="cell">Cell:</label>
+        <input type="tel" name="cell" id="cell">
+        <br/>
+
+        <label for="cars">Cars:</label>
+        <select name="cars" id="cars">
+            <option value="None"></option>
+            <option value="Volvo">Volvo</option>
+            <option value="Honda">Honda</option>
+            <option value="BMW">BMW</option>
+            <option value="Acura">Acura</option>
+            <option value="Toyota">Toyota</option>
+        </select>
+        <br/>
+
+        <label for="image">Image:</label>
+        <input type="image" src="../../Images/test.png" alt="Majoras Mask">
+        <br/>
+
+        <label for="happymeter">Happiness Meter:</label>
+        <input type="range" name="happymeter" id="happymeter">
+        <br/>
+
+        <label for="color">Color:</label>
+        <input type="color" name="color" id="color" disabled>
+        <br/>
+
+        <br/><br/>
+        <center>
+            <input type="submit" value="Click me">
+        </center>
+    </form>
+</body>
+
+</html>
