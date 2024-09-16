@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        .wrapper{
+            overflow: auto;
+        }
+        #main{
+            margin-left: 4px; /* 4px because... hamada didn't explain... */
+        }
+        #leftSide{
+            float: none;
+            width: auto;
+        }
+        #menuList{
+            margin: 0px;
+            padding: 0px;
+        }
+        .menuItem{
+            background: #7b8997;
+            border: 1px solid #d4d4d4; 
+            list-style: none;
+
+            padding: 2px;
+        }
+        
+        @media screen and (min-width: 600px){
+            body{
+                background-color: lightblue;
+            }
+            #leftSide{
+                float: left;
+                width: 200px;
+            }
+            #main{
+                margin-left: 216px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="leftSide">
+            <ul id="menuList">
+                <li class="menuItem">Item1</li>
+                <li class="menuItem">Item2</li>
+                <li class="menuItem">Item3</li>
+                <li class="menuItem">Item4</li>
+                <li class="menuItem">Item5</li>
+            </ul>
+        </div>
+
+        </div id="main">
+            <h1>Resize broswer to see effect!</h1>
+            <p>Lorem isum dolor sit amet,...</p>
+        </div>
+    </div>
+</body>
+</html>
