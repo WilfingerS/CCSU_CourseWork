@@ -50,7 +50,8 @@ function init() {
     document.body.style.background = "#000000";
     for (let i = 0; i < logoCount; i++) {
         let curLogo = logos[i];
-        xyArr[i] = [2, 2]; // sets starting x and y velocity
+        let randomSpeed = Math.floor(Math.random() * (10-1) +1);
+        xyArr[i] = [randomSpeed, randomSpeed]; // sets starting x and y velocity
         curLogo.style.position = 'absolute';
         getrandPos(i); // Get Random Starting Position
         setInterval(() => frame(i), 10); // Use arrow function to pass i correctly
