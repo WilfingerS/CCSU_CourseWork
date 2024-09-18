@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+#include <math.h> /* use: gcc <filename> -lm */
 int main(void) {
 
     

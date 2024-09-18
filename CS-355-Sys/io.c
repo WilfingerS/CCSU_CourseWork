@@ -7,6 +7,7 @@ int main(void){
     */
     printf("Enter a character:\n");
     scanf("%lf",&x);
+    /* lf for long float when scanning doubles */
     printf("The value of x is %lf \n",x);
     /*
      * %d for integers 
