@@ -1,0 +1,25 @@
+body {
+    background-color: burlywood;
+    text-align: center;
+}
+
+button {
+    border: none;
+    display: inline-block;
+}
+#response {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#monkeyImage {
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+
+    max-width: 512px;
+    max-height: 512px;
+    min-width: 128px;
+    min-height: 128px;
+}
