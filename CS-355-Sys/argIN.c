@@ -5,9 +5,11 @@
 void printArgs(int x, char *args[]);
 void myCat(int x,char *ch[]);
 /* try creating cat > test.txt */
+
 int main(int argc, char *argv[]){
     printArgs(argc,argv);
 }
+
 void printArgs(int argc, char *args[]){
     /* Input arguments for code */
     int i;

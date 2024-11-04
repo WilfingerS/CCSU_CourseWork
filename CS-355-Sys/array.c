@@ -29,7 +29,7 @@ int main(){
     scanf("%s",x);
     printf("%s\n",x);
     printf("%c\n",*x); // prints x[0]
-    printf("%c\n",*(x+3)); // prints x[1]
+    printf("%c\n",*(x+1)); // prints x[1]
     printf("%c\n",*x - 32); // 32 away is capitals in ascii code
     
     /*
