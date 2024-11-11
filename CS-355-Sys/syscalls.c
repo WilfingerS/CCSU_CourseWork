@@ -20,7 +20,7 @@ int main(int argc, char *argv[]) {
     }
 
     int dest_fd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0644);
-    if (dest_fd < 0) {
+    if (dest_fd < 0) { // Returns -1 if wrong
         perror("destination not found");
         close(source_fd);
         exit(1);
