@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Math Game</string>
+    <string name="AppTitle">Simple Math Game</string>
+    <string name="AppDescription">choose the correct operation to solve the math problem</string>
+
+    <string name="CorrectMessage">Congrats you know how to do math!</string>
+
+</resources>
