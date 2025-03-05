@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <math.h>
-#define PI = 3.14; //CONSTANT VARIABLE
+#define PI 3.14; //CONSTANT VARIABLE no need for =
 
 //List of Functions (Method 1, This way you dont need to define what the method does before it is called)
 int factorial(int x);
 double exponent(double x);
-//Decalre Function (Method 2)
-void print(){} // can omit void in "()" same as saying (void)
+//Declare Function (Method 2)
+void print(){
+    printf("Hello World\n");
+} // can omit void in "()" same as saying (void)
 
 
 int main(void){
